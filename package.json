@@ -1,11 +1,17 @@
 {
   "name": "all_npm_resources",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
+    "ready:copy_vector": "cpx \"./node_modules/react-native-vector-icons/Fonts/**/*.*\" ./vectorFonts",
+    "postinstall": "yarn ready:copy_vector",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "dependencies": {
+    "cpx": "1.5.0",
+    "react-native-vector-icons": "4.3.0"
+   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/trujunzhang/all_npm_resources.git"
